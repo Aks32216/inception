@@ -1,21 +1,5 @@
-// const heading = React.createElement("h1", {class: "heading"}, "Hello from js");
-
-
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// const root2 = ReactDOM.createRoot(document.getElementById("root1"));
-// root2.render(heading);
-// root.render(heading);
-
-
-/*
-<div id="parent">
-    <div id="child">
-        <h1>Hello world</h1>
-    </div>
-</div>
-*/
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", 
     { id: "parent" }, [
@@ -25,7 +9,7 @@ const parent = React.createElement("div",
     ),
     React.createElement("div", 
         { id: "child2" }, 
-        [React.createElement("h1", {}, "Hello world"),React.createElement("h2", {}, "Hello world2")]
+        [React.createElement("h1", {}, "Hello world"),React.createElement("h2", {}, "Hello world and end of world")]
     )
 ])
 

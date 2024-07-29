@@ -43,3 +43,61 @@ when we make a simple application of react, then few of the methods that react u
 3. render- it renders the element into the root.
 
 
+### package.json
+it is a configuration file for npm. it contains all the dependency list that a project depends upon. also it provides a path to transfer javascript projects without sending the node_modules folder. so people can just look at this file for reference and install the neccessary dependency for a project.
+
+npm uses this file to have all the configuration
+
+
+### bundler
+
+bundler is a tool that that packages the different code files, and compresses it so that it can be shipped to production.
+
+Eg: Vite, webpack, parcel
+
+(Bundler)[https://snipcart.com/blog/javascript-module-bundler]
+
+### dev dependency vs dependency
+
+dev dependency are those dependency that are only required when we are developing our application while a dependency is required in all phases of application starting from development to production.
+
+(Dependency Vs  DevDependency)[https://www.dhiwise.com/post/package-management-devdependencies-vs-dependencies]
+
+### symbols in version
+[major,minor,patch]
+
+^(carat) -  it represent changes in middle number.
+Eg: ^1.2.3 := >=1.2.3 <2.0.0-0 in this, patch and minor version will get automatically updated.
+~(tilde) - it represent changes in last number.
+EG: ~1.2.3 := >=1.2.3 <1.(2+1).0 := >=1.2.3 <1.3.0-0 in this, only patch will get automatically updated.
+
+
+it is better to update minor changes automatically but not major changes as it can break the code due to compatibility issues.
+so it is safe to put ^ and not ~.
+
+### package-lock.json
+
+it keeps record of the exact version of the dependency installed.
+
+### parcel
+
+- dev build
+- local server
+- Hot module replacement 
+- file watching algorithm
+- faster builds due to caching
+- Image optimization
+- if build is done for production, then it will minify the the files
+- bundles the files
+- compression of files
+- consistent hashing
+- code splitting
+- differential bundling
+- Diagnostic
+- HTTPs hosting facility
+- files created by parcel
+
+(parcel features)[https://medium.com/@nikhildhariwal2004/parcel-is-a-beast-an-all-in-one-bundle-for-powerful-web-development-e79f8a70cbd6]
+
+### browserlist
+
